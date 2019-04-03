@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.shownav {
+  left: 50% !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  font-family: 'Poppins', Arial;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0.9;
+  height: 7vh;
+  background: #fff;
+  z-index: 1;
+  top: 0;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+  border-left: 5px solid #000000;
+  border-right: 5px solid #000000;
+  border-bottom: 5px double #000000;
+  text-transform: uppercase;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header#header #logo h1 {
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
+header#header #logo h1 span {
+  color: brown;
+}
+
+@media (min-width: 768px) {
+  header#header nav {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+header#header nav span#open {
+  display: block;
+  margin-top: 18px;
+}
+
+header#header nav span#open:hover {
+  color: brown;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  header#header nav span#open {
+    display: none !important;
+  }
+}
+
+header#header nav #openmenu {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  left: -300px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  header#header nav #openmenu {
+    display: none !important;
+  }
+}
+
+header#header nav #openmenu span#close {
+  position: absolute;
+  top: 1%;
+  right: 6%;
+  color: #fff;
+  font-size: 20px;
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+header#header nav #openmenu span#close:hover {
+  color: #c4c4c4;
+  cursor: pointer;
+}
+
+header#header nav #openmenu ul.ul1 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+header#header nav #openmenu ul.ul1 li {
+  padding: 20px 5px;
+  width: 100%;
+  display: inline-block;
+}
+
+header#header nav #openmenu ul.ul1 li:hover a {
+  border-bottom: 2px dotted #fff;
+}
+
+header#header nav #openmenu ul.ul1 li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+header#header nav ul.ul2 {
+  height: 100%;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header#header nav ul.ul2 {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  header#header nav ul.ul2 li {
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  header#header nav ul.ul2 li a {
+    margin-top: 17px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  header#header nav ul.ul2 li a:hover {
+    border-bottom: 1px solid #000;
+  }
+}
+
+section#showcase {
+  background: url("../img/bg.jpg");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  section#showcase {
+    background-size: 100% 100%;
+    height: 100vh;
+  }
+}
+
+section#about {
+  background: #000;
+  width: 100%;
+}
+
+section#about .about-content h1 {
+  text-align: center;
+  color: #fff;
+  margin: 5% auto;
+  font-size: 30px;
+  text-transform: uppercase;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+}
+
+section#about .about-content p {
+  text-align: justify;
+  font-size: 15px;
+  margin-bottom: 5%;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  section#about .about-content p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+section#about .about-content div #showmore {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+section#about .about-content div #showmore:hover {
+  background: #fff;
+  color: #000;
+  border: #000 solid 1px;
+}
+
+section#about .about-content #readmore {
+  display: none;
+}
+
+section#about .about-content #readmore h1 {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  section#about .about-content #readmore h1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+}
+
+section#members {
+  width: 100%;
+}
+
+section#members .members-content {
+  text-align: center;
+}
+
+section#members .members-content h1 {
+  margin: 30px auto;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+section#members .members-content .memb {
+  padding-bottom: 10px;
+}
+
+section#members .members-content .memb img {
+  width: 100%;
+  border: #000 solid 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 10px 10px 10px #000;
+          box-shadow: 10px 10px 10px #000;
+}
+
+@media (min-width: 768px) {
+  section#members .members-content .memb img {
+    width: 80%;
+  }
+}
+
+section#members .members-content .memb p {
+  margin: 5%;
+}
+
+@media (min-width: 768px) {
+  section#members .members-content .memb p {
+    font-size: 20px;
+    margin: 20px;
+  }
+}
+
+section#songs {
+  background: #000;
+  width: 100%;
+}
+
+section#songs h1 {
+  text-align: center;
+  color: #fff;
+  margin: 5% auto;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+section#songs #songs-content #mv {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section#songs #songs-content #mv {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+section#songs #songs-content #mv iframe {
+  border: #fff 3px solid;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section#songs #songs-content #btn h1 {
+  font-size: 20px;
+}
+
+section#songs #songs-content #btn .alllyrics {
+  display: block;
+  margin: 5% auto;
+  padding: 10px;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 5px;
+  border: #fff 1px solid;
+}
+
+section#songs #songs-content #btn .alllyrics:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  border: #000 solid 1px;
+}
+
+section#songs #songs-content #btn #lyrics1,
+section#songs #songs-content #btn #lyrics2,
+section#songs #songs-content #btn #lyrics3,
+section#songs #songs-content #btn #lyrics4,
+section#songs #songs-content #btn #lyrics5,
+section#songs #songs-content #btn #lyrics6 {
+  display: none;
+  padding: 5% 0;
+  margin-bottom: 5%;
+  border: #fff 1px solid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (min-width: 768px) {
+  section#songs #songs-content #btn #lyrics1,
+  section#songs #songs-content #btn #lyrics2,
+  section#songs #songs-content #btn #lyrics3,
+  section#songs #songs-content #btn #lyrics4,
+  section#songs #songs-content #btn #lyrics5,
+  section#songs #songs-content #btn #lyrics6 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+}
+
+section#songs #songs-content #btn #lyrics1 .lyrics,
+section#songs #songs-content #btn #lyrics2 .lyrics,
+section#songs #songs-content #btn #lyrics3 .lyrics,
+section#songs #songs-content #btn #lyrics4 .lyrics,
+section#songs #songs-content #btn #lyrics5 .lyrics,
+section#songs #songs-content #btn #lyrics6 .lyrics {
+  color: #fff;
+  width: 45%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+section#songs #songs-content #btn #lyrics1 .lyrics p,
+section#songs #songs-content #btn #lyrics2 .lyrics p,
+section#songs #songs-content #btn #lyrics3 .lyrics p,
+section#songs #songs-content #btn #lyrics4 .lyrics p,
+section#songs #songs-content #btn #lyrics5 .lyrics p,
+section#songs #songs-content #btn #lyrics6 .lyrics p {
+  font-size: 13px;
+}
+
+section#sidetrack {
+  width: 100%;
+}
+
+section#sidetrack .sidetrack-content {
+  margin: 20px 0;
+  border: #000 5px double;
+}
+
+@media (min-width: 768px) {
+  section#sidetrack .sidetrack-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+  }
+}
+
+section#sidetrack .sidetrack-content h1 {
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  padding: 5% 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  background: #000;
+}
+
+section#sidetrack .sidetrack-content .track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+}
+
+section#sidetrack .sidetrack-content .track h3 {
+  margin-top: 10px;
+  padding: 0 10px;
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  section#sidetrack .sidetrack-content .track h3 {
+    margin-top: 12px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+section#sidetrack .sidetrack-content .track audio {
+  width: 50%;
+  height: 40px;
+}
+
+footer {
+  padding-top: 10px;
+  border-bottom: 5px double #000;
+}
+
+footer .footer-content {
+  position: relative;
+  bottom: 0;
+  border-left: 5px double #000;
+  border-right: 5px double #000;
+  border-top: 5px double #000;
+  border-bottom: 1px solid #000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 80%;
+  margin-left: 10%;
+  background: #fff;
+}
+
+footer .footer-content h1 {
+  padding: 5px 0;
+  font-size: 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
